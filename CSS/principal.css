@@ -1,0 +1,332 @@
+body {
+    display: flex;
+    background-image: url(https://i.pinimg.com/originals/2b/78/56/2b7856deeff130baf1eb4414d5852b38.jpg);
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.github{
+    position: relative;
+    margin: 0;
+    left: 750px;
+    top: -20px;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+}
+
+.doraemon {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.cabeza {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-color: #00a0e9;
+    border-radius: 50%;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+}
+
+.cara {
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+}
+
+.ojos {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 45%;
+    top: 40px;
+}
+
+.ojos.izquierdo::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 5px;
+}
+
+.ojos.izquierdo::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 8px;
+}
+
+.ojos.derecho::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: 15px;
+    left: 5px;
+}
+
+.ojos.derecho::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 8px;
+}
+
+.ojos.izquierdo { left: 75px; }
+.ojos.derecho { right: 78px; }
+
+.nariz {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+}
+
+.nariz::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+
+.linea-nariz {
+    position: absolute;
+    width: 2px;
+    height: 88px;
+    background-color: black;
+    top: 152px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bigotes {
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: black;
+    top: 140px;
+}
+
+.bigotes.izquierdo1 { left: 40px; transform: rotate(15deg); }
+.bigotes.izquierdo2 { left: 40px; top: 160px; }
+.bigotes.izquierdo3 { left: 40px; top: 180px; transform: rotate(-15deg); }
+.bigotes.derecho1 { right: 40px; transform: rotate(-15deg); }
+.bigotes.derecho2 { right: 40px; top: 160px; }
+.bigotes.derecho3 { right: 40px; top: 180px; transform: rotate(15deg); }
+
+.boca {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 100px 100px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cuerpo {
+    position: absolute;
+    width: 220px;
+    height: 260px;
+    background-color: #00a0e9;
+    border-radius: 40px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+}
+
+.collar {
+    position: absolute;
+    width: 100%;
+    height: 13px;
+    background-color: #ff0000;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.campana-detalles{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #94831d;
+    border-radius: 50%;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(169, 135, 33);
+    z-index: 3;
+}
+
+.campana-detalles2{
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    background-color: black;
+    top: 40px;
+    left: 109px;
+    z-index: 3;
+}
+
+.campana {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #ffd700;
+    border-radius: 50%;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+    z-index: 3;
+}
+
+.campana::after {
+    content: '';
+    position: absolute;
+    width: 41px;
+    height: 7px;
+    background-color: #cc9900;
+    border-radius: 10%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.barriga {
+    position: absolute;
+    width: 180px;
+    height: 160px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.barriga::after {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0 0 100px 100px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brazos {
+    position: absolute;
+    width: 50px;
+    height: 120px;
+    background-color: #00a0e9;
+    border-radius: 25px;
+    top: 30px;
+    border: 2px solid black;
+}
+
+.brazos.izquierdo { 
+    left: -10px; 
+    top: 35px;
+    transform: rotate(25deg);
+    transform-origin: top right;
+}
+.brazos.derecho { 
+    right: -10px; 
+    top: 35px;
+    transform: rotate(-25deg);
+    transform-origin: top left;
+}
+
+.manos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: -15px;
+    left: -5px;
+    border: 2px solid black;
+}
+
+.linea-piernas {
+    position: absolute;
+    width: 2px;
+    height: 29px;
+    background-color: black;
+    bottom: -2px; 
+    left: 113px;
+}
+
+.linea-entre-pierna {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    bottom: 25px; 
+    left: 98px;
+}
+
+.pies {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    bottom: -25px;
+    border: 2px solid black;
+}
+
+.pies.izquierdo { left: 11px; }
+.pies.derecho { right: 2px; }
